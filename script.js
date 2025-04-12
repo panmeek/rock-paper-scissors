@@ -23,13 +23,13 @@ function playGame() {
             || humanChoice === "paper" && computerChoice === "rock"
             || humanChoice === "scissors" && computerChoice === "paper"
         ) {
-            console.log(`You win, ${humanChoice} beats ${computerChoice}!`);
+            alert(`You win, ${humanChoice} beats ${computerChoice}!`);
             humanScore++;
         } else if (humanChoice === computerChoice) {
-            console.log("It's a draw!");
+            alert("It's a draw!");
             return;
         } else {
-            console.log(`You lose, ${computerChoice} beats ${humanChoice}!`);
+            alert(`You lose, ${computerChoice} beats ${humanChoice}!`);
             computerScore++;
         }
     }
@@ -40,7 +40,9 @@ function playGame() {
             getComputerChoice()
         );
     }
-    console.log(
+    alert(
         `Game Score\nPlayer: ${humanScore}\nComputer: ${computerScore}`
     );
 }
+
+playGame();
