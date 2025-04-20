@@ -36,13 +36,14 @@ h1 {
     gap: 36px;
 }
 
-.pick {
+button {
     padding: 16px 24px;
     background: none;
     border: none;
     font-size: 48px;
     cursor: pointer;
     margin: 8px;
+    font-weight: 100;
 }
 
 .game-score {
@@ -51,7 +52,7 @@ h1 {
     padding: 0;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 96px;
+    margin: 96px 0;
 }
 
 .score {
@@ -65,4 +66,19 @@ h1 {
 
 .human-score, .computer-score {
     font-weight: 100;
+}
+
+.end-game-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 200;
+}
+
+.end-game-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
 }
