@@ -36,9 +36,23 @@ function playGame() {
         }
     }
 
+    function choiceTextToEmoji(choice) {
+        switch(choice) {
+            case "rock":
+                return "🪨";
+                break;
+            case "paper":
+                return "📄";
+                break;
+            case "scissors":
+                return "✂️";
+                break;
+        }
+    }
+
     function playRound(humanChoice, computerChoice) {
-        computerChoiceElem.textContent = computerChoice;
-        humanChoiceElem.textContent = humanChoice;
+        computerChoiceElem.textContent = choiceTextToEmoji(computerChoice);
+        humanChoiceElem.textContent = choiceTextToEmoji(humanChoice);
 
         if (
             humanChoice === "rock" && computerChoice === "scissors"

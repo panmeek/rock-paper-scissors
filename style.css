@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,11 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-weight: 300;
 }
 
 .round-picks {
@@ -18,6 +25,7 @@ body {
     height: 10vh;
     margin: 48px 0;
     gap: 96px;
+    font-size: 64px;
 }
 
 .available-picks {
@@ -34,6 +42,7 @@ body {
     border: none;
     font-size: 48px;
     cursor: pointer;
+    margin: 8px;
 }
 
 .game-score {
@@ -50,4 +59,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-weight: 200;
+    font-size: 36px;
+}
+
+.human-score, .computer-score {
+    font-weight: 100;
 }
