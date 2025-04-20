@@ -1,1 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-picks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 48px 0;
+}
+
+.available-picks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pick {
+    margin: 0 24px;
+    padding: 16px 24px;
+    background: none;
+    border: none;
+    font-size: 48px;
+    cursor: pointer;
+}
