@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
 }
 
 .round-picks {
@@ -22,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 48px 0;
 }
 
 .pick {
@@ -31,4 +33,20 @@ body {
     border: none;
     font-size: 48px;
     cursor: pointer;
+}
+
+.game-score {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 96px;
+}
+
+.human-score, .computer-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
