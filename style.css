@@ -17,6 +17,7 @@ body {
     align-items: center;
     height: 10vh;
     margin: 48px 0;
+    gap: 96px;
 }
 
 .available-picks {
@@ -24,10 +25,10 @@ body {
     justify-content: center;
     align-items: center;
     margin: 48px 0;
+    gap: 36px;
 }
 
 .pick {
-    margin: 0 24px;
     padding: 16px 24px;
     background: none;
     border: none;
@@ -44,7 +45,7 @@ body {
     margin-top: 96px;
 }
 
-.human-score, .computer-score {
+.score {
     display: flex;
     flex-direction: column;
     align-items: center;
