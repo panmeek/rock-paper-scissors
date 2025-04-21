@@ -1,27 +1,27 @@
 let computerScore = 0;
 let humanScore = 0;
 
-let computerChoiceElem = document.querySelector(".computer-choice");
-let humanChoiceElem = document.querySelector(".human-choice");
+const computerChoiceElem = document.querySelector(".computer-choice");
+const humanChoiceElem = document.querySelector(".human-choice");
 
-let computerScoreElem = document.querySelector(".computer-score");
-let humanScoreElem = document.querySelector(".human-score");
+const computerScoreElem = document.querySelector(".computer-score");
+const humanScoreElem = document.querySelector(".human-score");
 
-let endGameTextElem = document.createElement("div");
+const endGameTextElem = document.createElement("div");
 endGameTextElem.classList.add("end-game-text");
 
-let endGameButtonsElem = document.createElement("div");
+const endGameButtonsElem = document.createElement("div");
 endGameButtonsElem.classList.add("end-game-buttons");
-let restartGameButtonElem = document.createElement("button");
-let stopGameButtonElem = document.createElement("button");
+const restartGameButtonElem = document.createElement("button");
+const stopGameButtonElem = document.createElement("button");
 endGameButtonsElem.appendChild(restartGameButtonElem);
 endGameButtonsElem.appendChild(stopGameButtonElem);
 
-let availablePicks = document.querySelector(".available-picks");
+const availablePicks = document.querySelector(".available-picks");
 availablePicks.addEventListener("click", getHumanChoice);
 
 function getComputerChoice() {
-    let randomNumber = Math.ceil(Math.random() * 3);
+    const randomNumber = Math.ceil(Math.random() * 3);
     if (randomNumber === 1) {
         return "rock";
     } else if (randomNumber === 2) {
@@ -32,7 +32,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice(event) {
-    let target = event.target;
+    const target = event.target;
 
     switch(target.id) {
         case "rock":
